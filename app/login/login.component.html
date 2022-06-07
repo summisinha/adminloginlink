@@ -1,0 +1,35 @@
+<body background-image="https://images.squarespace-cdn.com/content/v1/58b38d8659cc684cc8867e42/1505410871477-ZO1WOINXFYYM5TEMLJPG/insurance-claims">
+    <div class="container">
+      <div class="title">Admin Login</div>
+      <form (ngSubmit)="adminLogin()">
+     
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+         
+            <div class="input-box" br>
+              <span class="details">Username</span>
+              <input type="text" placeholder="Enter your username" required [(ngModel)]="admin.adminId" id="adminId" name="adminId">
+            </div>
+          
+            
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input type="password" placeholder="Enter your password" required [(ngModel)]="admin.password" id="password" name="password">
+            </div>
+            
+          
+        
+          </div>
+          <div class="button">
+            <input type="submit" value="Login">
+          </div>
+        </form>
+      </div>
+      </form>
+    </div>
+    <router-outlet></router-outlet>
+  
+    </body>
+    
+ 
